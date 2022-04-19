@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!-- Copyright (C) 2015 IBM Corporation -->
+<!-- Copyright (C) 2000 Tivoli Systems, Inc. -->
+<!-- Copyright (C) 1999 IBM Corporation -->
+<!-- Copyright (C) 1998 Dascom, Inc. -->
+<!-- All Rights Reserved. -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DHA Security Access Manager</title>
+    <style>
+
+      em {
+        font-style:inherit;
+        font-weight:700;
+      }
+
+      body {
+        background-color:#f5f5f5;
+        font-face:Helvetica, Arial, sans-serif;
+        -moz-font-smoothing:antialiased;
+        -ms-font-smoothing:antialiased;
+        -o-font-smoothing:antialiased;
+        unicode-bidi:embed;
+        -webkit-font-smoothing:antialiased;
+        -webkit-locale:en;
+        margin:0;
+        padding:0;
+        font-family: 'Dubai',sans-serif;
+      }
+
+      html {
+        height:100%;
+        min-height:400px;
+        
+      }
+
+      strong {
+        font-weight:700;
+      }
+
+      a {
+       color:inherit;
+        text-decoration:inherit;
+      }
+
+      article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,.universal-menu-home-logo {
+        display:block;
+      }
+
+      button,input[type="submit"] {
+        font-face:inherit;
+        border:none;
+        display:block;
+        sfont-face:inherit;
+        margin:0;
+        width:120px;
+      }
+
+    .login-container {
+      position:absolute;
+      left:50%;
+      top:44%;
+      width:440px;
+      color:#FFF;
+      background-color:rgba(0,0,0,0.33);
+      box-sizing:border-box;
+      margin:-180px 0 0 -220px;
+      padding:32px 64px;
+    }
+
+    .button-1 {
+      color:#FFF;
+      background-color:#4178BE;
+      cursor:pointer;
+      float:right;
+      font-size:12px;
+      font-weight:700;
+      width:104px;
+      padding:12px 16px;
+    }
+
+    .button-1:hover {
+      background-color:#FFF;
+      color:#121212;
+    }
+
+    .ease-in-anim-fast {
+      transition:all 200ms cubic-bezier(0.25, 0.25, 0, 0.995) 0s;
+    }
+
+    .login-container h2 {
+      font-weight:inherit;
+      font-size:20px;
+      margin:0 0 32px;
+    }
+
+    .forgot-password {
+      font-size:10px;
+      color:#FFF;
+      position:relative;
+      top:12px;
+    }
+
+    .forgot-password:hover {
+      text-decoration:underline;
+    }
+
+    input[type="text"],input[type="password"],input[type="email"] {
+      font-size:14px;
+      height:40px;
+      -moz-border-top-colors:none;
+      -moz-border-right-colors:none;
+      -moz-border-bottom-colors:none;
+      -moz-border-left-colors:none;
+      border-image:none;
+      border-radius:0;
+      box-sizing:border-box;
+      display:block;
+      font-face:"Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+      position:relative;
+      width:100%;
+      border-color:transparent;
+      border-style:solid;
+      border-width:1px 1px 1px 5px;
+      margin:0 0 16px;
+      padding:11px;
+    }
+
+    input[type='text']:hover,input[type='text']:focus,input[type='password']:hover,input[type='password']:focus,input[type='email']:hover,input[type='email']:focus {
+      border:1px solid #999;
+      border-left:5px #07B solid;
+    }
+
+    #password {
+      margin:0 0 32px;
+    }
+
+    .footer {
+      position:fixed;
+      bottom:0;
+      color:#FFF;
+      background-color:rgba(0,0,0,0.44);
+      width:100%;
+      box-sizing:border-box;
+      height:80px;
+      padding:0 24px;
+    }
+
+@media screen and (max-height: 500px) {
+  .footer{
+    display: none; 
+  } 
+}
+
+    .footer .ibm-logo {
+      height:24px;
+      float:left;
+      margin:28px 0 0;
+    }
+
+    .footer #clock {
+      float:right;
+      font-size:36px;
+      height:36px;
+      line-height:0;
+      position:relative;
+      top:42px;
+      padding:0;
+    }
+
+    .login-inputs {
+      clear:both;
+      overflow:hidden;
+    }
+    .error-box img {
+      margin:0 0 0 0;
+      padding-bottom: 20px;
+	  padding-right: 20px;
+    }
+    #errId {
+      overflow:hidden;
+      position: relative;
+      top: -6px;
+      margin: 0 0 0 8px;
+    }
+    .error-box.active {
+      display:block;
+    }
+    .error-box {
+      display:none;
+	  overflow: hidden;
+      font-size:14px;
+      background-color:#FFF;
+      color:#DE0000;
+      clear:both;
+      float:none;
+      position:relative;
+      bottom:-32px;
+      margin:0 -64px 0 -64px;
+      padding:26px 26px 10px 26px;
+      min-height:50px;
+      box-sizing:border-box;
+    }
+
+@media screen and (max-height: 500px) {
+  .footer{
+    display: none; 
+  } 
+}
+
+    @media all and (max-width: 480px){
+      .login-container {
+        width:300px;
+        margin:-190px 0 0 -150px;
+        padding:32px 24px;
+      }
+      .error-box {
+        margin:0 -24px 0 -24px;
+        padding:26px 24px 0 24px;
+      }
+  .footer{
+    display: none; 
+  } 
+    }
+
+
+    </style>
+    <script type="text/javascript">
+
+function userAppend()
+{
+	var user = document.form1.username.value;
+	if(user=="")
+	{
+		alert("Please type the Username and try again");
+		return false;
+	}
+	else
+	{
+		window.location = "/itim/self/Login/ChallengeResponse.do?command=load&j_username="+user+"&browserOffset=3";
+	}
+}
+
+    	function onLoadPage() {
+    		changeURL();
+			showError();
+    		setFocus();
+    	}
+    	function showError() {
+    		var elem = document.getElementById("error-box");
+    		if ("" == "") {	
+          elem.setAttribute("class", "error-box");
+    		} else {
+    			elem.setAttribute("class", "error-box active");
+    		}
+    	}
+    	function setFocus() {
+    		document.getElementById("username").focus();
+    	}	
+		
+		
+		function changeURL()
+		{
+
+		//alert(document.referrer);
+		//alert(location.pathname);
+		//alert(location.hostname);
+			
+		var err = "" + "";
+		err = err.substring(0, err.indexOf(" "));
+		//alert (err);
+		var ssohostname = "services.dha.gov.ae";
+			if( (document.referrer.indexOf("eservices") != -1) || (location.pathname.indexOf("eservices") != -1) || (location.hostname.indexOf("dha.gov.ae") != -1))
+			{
+				if (err.length>0)
+				{
+					location = "https://" + ssohostname + "/eservices/dhaweb/default.aspx?AuthenticationError=" + err;
+				}
+				else
+				{
+					location = "https://" + ssohostname + "/eservices/dhaweb/default.aspx";
+				}
+					
+				//alert("final Location is:" + location);
+			}
+		}
+		
+		
+		
+		
+    </script>
+
+    <!-- ClickJack projection from: 
+         https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet
+      -->
+
+    <style id="antiClickjack">body{display:none !important;}</style>
+
+    <script type="text/javascript">
+        if (self === top) {
+            var antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
+
+  </head>
+  <body onload="onLoadPage()">
+    <div class="content">
+      <!-- DO NOT TRANSLATE OR MODIFY any part of the hidden parameter(s) -->
+
+      <!--
+        The following block of code provides users with a warning message
+        if they do not have cookies configured on their browsers.  
+        If this environment does not use cookies to maintain login sessions, 
+        simply remove or comment out the block below.
+      -->
+
+      <!-- BEGIN Cookie check block -->
+      <!--
+      DO NOT TRANSLATE anything inside the SCRIPT tag except the quoted 
+      string warningString and the first line of the JavaScript redirection 
+      instruction beginning with "// Uncomment the following ..." 
+
+      i.e.	var warningString = "Translate this string";
+      -->
+      <script type="text/javascript">
+        var warningString = "";
+        document.cookie = 'acceptsCookies=yes';
+        if(document.cookie == ''){
+          document.write(warningString);
+        }
+        else{
+          document.cookie = 'acceptsCookies=yes; expires=Fri, 13-Apr-1970 00:00:00 GMT';
+          // Uncomment the following line for JavaScript redirection
+          // document.cookie = 'ISAMOriginalURL=' + encodeURIComponent(window.location) + "; Path=/;";
+        }
+      </script>
+      <noscript>
+        <b>WARNING:</b> To maintain your login session, make sure that<br/>
+        your browser is configured to accept Cookies.
+      </noscript>
+      <!-- END Cookie check block -->
+
+<FORM method=post name=form1 action="https://services.dha.gov.ae/pkmslogin.form" style="visibility:hidden"; style="max-width:390px; width:100%; margin:0 auto;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);box-shadow: 0 7px 26px rgba(0, 0, 0, 0.14);}" autocomplete="off">
+<TABLE border=0 cellSpacing=0  cellPadding=0 width="100%" align=center style="padding-bottom:0px;background:#fff;">
+  
+  <TR>
+    <TD align=middle>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width=100% align=center>
+        
+        <TR>
+        <TD align=left style="padding-bottom:5px;"><img src="https://services.dha.gov.ae/images/govdub.png" width="100px" height="43" hspace="10" vspace="10"></TD>
+        <TD align=right valign="middle" style="padding-bottom:5px; padding-right:12px;"><img src="https://services.dha.gov.ae/images/logo.png" width="100" height="38"></TD>
+        </TR>
+        <TR>
+          <TD colspan="2" bgColor=#008b99>
+            <TABLE border=0 cellSpacing=0 cellPadding=0 width="100%" 
+              align=center>
+              <TR>
+   
+                <TD class=style1 height=30 style="text-align: center;color: #fff;">DHA IdAM Password Reset
+            </TD></TR></TABLE></TD></TR>
+        <TR>
+          <TD colspan="2">
+            <TABLE border=0 cellSpacing=0 cellPadding=3 align=center>
+              
+              <TR>
+                <TD colspan="2" vAlign=bottom align=left><SPAN class=style2><B>User 
+                  Name</B></SPAN></TD></TR>
+              <TR>
+                <TD colspan="2" vAlign=top align=middle><INPUT 
+                  style="WIDTH: 210px; FONT-SIZE: 12px;height: 31px;" maxLength=30 size=10 
+                  name=username placeholder="SSO-ID" autocomplete="off"></TD></TR>
+             
+
+
+<tr>
+              <td colspan="2" align="center" valign="top" ><a class="style4" style="color:#8cc63f;" href="dentalddl.svg.html#" onClick='javascript:userAppend()'>Forgot Password</a><br><td>
+            </tr>              
+
+              <TR>
+
+              <TR>
+                <TD colspan="2" vAlign=top align=middle><B>For any help please contact 
+                  <BR> IAM helpdesk <BR></B></TD></TR>
+        
+        </TABLE></TD></TR>
+      </TABLE></TD></TR></TABLE></FORM>
+	<script type="text/javascript">  
+	function showIt() {  
+	document.form1.style.visibility = "hidden"; 
+    //document.getElementById("divpageload").style.visibility = "hidden";
+	}  
+	setTimeout("showIt()", 5000); // after 5 sec  
+	</script>  
+  </body>
+</html>

@@ -1,0 +1,2169 @@
+@import url('../../../../Style Library/DHA/assets/fonts/font-awesome.min.css.html');
+
+body {
+    overflow-y: auto;
+}
+
+header .searchbox .ms-srch-sb {
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+    /*for search icon font */
+    header .searchbox .ms-srch-sb > .ms-srch-sb-searchLink,
+    .mobile-panel .searchbox .ms-srch-sb > .ms-srch-sb-searchLink {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        font-size: 22px;
+        width: auto;
+        height: auto;
+    }
+
+.mobile-panel .searchbox .ms-srch-sb > .ms-srch-sb-searchLink {
+    right: 20px;
+}
+
+header .searchbox .ms-srch-sb-searchImg,
+.mobile-panel .searchbox .ms-srch-sb-searchImg {
+    display: none;
+}
+
+header .searchbox .sp_searchcontrol {
+    display: none;
+}
+
+header .searchbox.open .sp_searchcontrol,
+.mobile-panel .searchbox.open .sp_searchcontrol {
+    display: block;
+}
+
+.mobile-panel .searchbox {
+    position: relative;
+}
+
+.ms-webpart-zone,
+.ms-webpart-cell-vertical,
+.ms-webpart-chrome-vertical {
+    display: block;
+}
+
+.sp_bannerSlider {
+    float: left;
+    width: 100%;
+}
+
+.banner-slider .bx-actions {
+    clear: both;
+}
+
+.ms-webpartzone-cell {
+    margin: 0;
+}
+
+#s4-workspace {
+    overflow: visible;
+    width: auto !important;
+    height: auto !important;
+}
+
+.ms-srch-sb {
+    display: block;
+}
+
+.ms-srch-sb-borderFocused {
+    border: 0 none;
+}
+
+.mobile-panel .searchbox .searchbtn .icon.search {
+    display: none;
+}
+
+.mobile-panel .btns-arrange {
+    display: none;
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0;
+}
+
+/*Arabic CSS*/
+[dir="rtl"] header .searchbox .ms-srch-sb > .ms-srch-sb-searchLink,
+[dir="rtl"] .mobile-panel .searchbox .ms-srch-sb > .ms-srch-sb-searchLink {
+    left: 20px;
+    right: auto;
+}
+
+[dir="rtl"] header .searchbox.open .searchfield, header .searchbox.open input[type=text] {
+    height: 60px;
+}
+
+.find-doctor .nav-container .tab-pane .right-side .alpha-filter .alpha-filter-options a {
+    padding: 8px;
+    color: #8cc63f;
+}
+
+.better-health .issue-item img {
+    width: 102%;
+    max-width: 102%;
+}
+
+.smart-apps .apps-box .apps-desc h5 {
+    min-height: 50px;
+}
+
+.issue-item img {
+    height: 215px;
+}
+
+.editpage {
+}
+
+.btn btn-primary {
+}
+
+.breadcrumb {
+    padding: 0 8px;
+    background: 0 0;
+    margin: 8px 0 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+    .breadcrumb a {
+        color: #007780;
+        font-size: 13px;
+        float: left;
+        margin: 0 5px;
+    }
+
+    .breadcrumb .home {
+        font-size: 18px;
+    }
+
+    .breadcrumb a:last-child {
+        color: #333333;
+    }
+
+.title {
+    width: 100%;
+    border-bottom: 0 solid #d9d9d9;
+    margin-bottom: 10px;
+}
+
+    .title h2 {
+        padding: 8px 0;
+        border: 0;
+        line-height: 40px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #d9d9d9;
+        font-weight: 500;
+        font-family: 'Dubai' !important;
+    }
+
+    .inner-content h2, .title h2 {
+        font-size: 32px;
+        color: #007780;
+    }
+
+.news .col-md-12, .pagerli h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    border: none;
+    margin: 5px;
+    border-radius: 0;
+}
+
+.news i {
+    color: #007780;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+.info-news {
+    display: block;
+    border-radius: 0;
+}
+
+    .info-news span {
+        color: #666666;
+        font-size: 14px;
+        padding: 5px 0;
+        font-weight: 500;
+    }
+
+        .info-news span.date {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+.inner-content p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    /*padding: 10px 0;*/
+    /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
+}
+
+/* .x-large-font header .searchbox .searchbtn {
+    height: 67px !important;
+}
+
+.large-font header .searchbox .searchbtn {
+    height: 64px !important;
+} */
+/* qa */
+.small-font header .searchbox .searchbtn {
+    height: 58px !important;
+}
+
+.x-small-font header .searchbox .searchbtn {
+    height: 54px !important;
+}
+
+/*Home Search Css Starts*/
+.wrapper-dropdown-2 {
+    position: relative;
+    padding: 27px 35px 20px 15px;
+    width: 120px;
+    height: 80px;
+    background-color: #f2f2f2;
+    box-shadow: none;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    /*font-family: "robotolight",Helvetica,Arial,sans-serif;*/
+}
+
+    .wrapper-dropdown-2:after {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        pointer-events: none;
+        box-sizing: border-box;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        border: 0 none;
+        height: 7px;
+        width: 12px;
+        font-family: 'icomoon';
+        content: "\e902";
+        font-size: 13px;
+        color: #8cc63f;
+        line-height: 7px;
+        top: 50%;
+        right: 15px;
+        margin-top: -3px;
+    }
+
+    .wrapper-dropdown-2 .dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        background: white;
+        transition: all 0.3s ease-out;
+        list-style: none;
+        opacity: 0;
+        pointer-events: none;
+        border: 1px solid #ccc;
+        width: 101px;
+        width: 120px;
+        top: 78px;
+        left: -1px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 0px;
+    }
+
+        .wrapper-dropdown-2 .dropdown li a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease-out;
+            padding: 8px 14px;
+        }
+
+        .wrapper-dropdown-2 .dropdown li i {
+            margin-right: 5px;
+            color: inherit;
+            vertical-align: middle;
+        }
+        /* Hover state */
+        .wrapper-dropdown-2 .dropdown li:hover a {
+            background-color: #f2f2f2;
+            color: #495c68;
+        }
+
+    .wrapper-dropdown-2.active:after {
+        border-width: 0 6px 6px 6px;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .wrapper-dropdown-2.active .dropdown {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+.cssddlselect {
+    padding: 10px 15px;
+    height: 60px;
+    box-shadow: none;
+    line-height: 36px;
+    position: relative;
+    border: 1px solid #d0d0d0;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select#ddlProCategoryList {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+    select#ddlProCategoryList Option:hover {
+        background: grey;
+    }
+
+    select#ddlProCategoryList Option {
+        background: grey;
+        padding: 8px 14px !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 200px;
+        -webkit-overflow-scrolling: touch;
+        background-color: #f2f2f2;
+        color: #495c68;
+        cursor: pointer;
+    }
+
+.custom-select:after {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: 0 none;
+    height: 7px;
+    width: 12px;
+    font-family: 'icomoon';
+    content: "\e902";
+    font-size: 13px;
+    color: #8cc63f;
+    line-height: 7px;
+    top: 50%;
+    right: 15px;
+    margin-top: -3px;
+}
+
+.custom-select.active:after {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.cssddl {
+    padding: 20px 35px 20px 15px;
+    width: 120px;
+    height: 80px;
+    background-color: #f2f2f2;
+    box-shadow: none;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: 1px solid #d0d0d0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.field-row.custom-select {
+    position: relative;
+}
+
+    .field-row.custom-select::after {
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        pointer-events: none;
+        box-sizing: border-box;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        border: 0 none;
+        height: 7px;
+        width: 12px;
+        font-family: 'icomoon';
+        content: "\e902";
+        font-size: 13px;
+        color: #8cc63f;
+        line-height: 7px;
+        top: 60%;
+        right: 15px;
+        margin-top: 0px;
+    }
+
+/*Home Search Css Ends*/
+
+/*Common css starts here*/
+#sidenav > ul > li > a > span {
+    display: block;
+    padding: 15px 10px;
+}
+
+#sidenav > ul > li.active {
+    border-bottom: none;
+    background: #007780;
+    color: #fff;
+}
+
+    #sidenav > ul > li.active > a {
+        color: #fff;
+    }
+
+#sidenav > ul > li a.current {
+    font-weight: 700;
+    font-size: 14px;
+    color: #007780;
+}
+
+#sidenav > ul > li > a {
+    font-size: 16px;
+    color: #333333;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#sidenav, #sidenav a, #sidenav li, #sidenav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1;
+    font-family: 'Dubai',sans-serif;
+    font-size: 16px;
+    position: relative;
+}
+
+    #sidenav a {
+        line-height: 1.3;
+    }
+
+    #sidenav ul ul a, #sidenav > ul > li.active ul, #sidenav > ul > li > a, footer {
+        display: block;
+    }
+
+.inner-content li {
+    font-size: 14px;
+    line-height: 24px;
+    list-style: disc;
+}
+
+#sidenav ul ul li {
+    padding: 11px 0;
+    border-bottom: 1px solid #e3e3e3;
+    background: #f1f5f6;
+}
+
+#sidenav ul ul a {
+    padding: 3px 10px;
+    line-height: 26px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#sidenav, .outlink {
+    width: 100%;
+}
+
+    #sidenav > ul > li.has-sub > a span {
+        /*background: url(../img/downarrow.png) 96% center no-repeat;*/
+    }
+
+    #sidenav ul ul {
+        display: none;
+        background: #f1f5f6;
+    }
+
+    #sidenav > ul > li {
+        background: #fff;
+        padding: 0;
+    }
+
+    #sidenav ul ul li {
+        padding: 11px 0;
+        border-bottom: 1px solid #e3e3e3;
+        background: #f1f5f6;
+    }
+
+    #sidenav ul ul a:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        color: #007780;
+    }
+
+.col-md-3.col-xs-6.asidebar {
+    padding: 0;
+    margin: 0;
+}
+
+.our-locside h2 {
+    color: #007780;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 7px 0;
+    font-size: 24px !important;
+}
+
+.inner-content h2 {
+    padding: 4px 0;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+
+.acessserbut, .acessserbut a, .bulletarrli, .mapdata, .our-locside h2 {
+    position: relative;
+}
+/* code for scservicedetails.aspx */
+.genetics, .healthtips, .healthyfood, .hosform, .hosform .viewmore, .hosform a, .inner-content, .main-inner, .medicaledu .icon-tabs, .nursing, .nursings, .nutricon, .phctab, .phctabcon, .primaryh-services, .primaryhlink, .sidebar, .socialmenu, .timeline, .viewmore {
+    position: relative;
+}
+
+.sidebar {
+    margin-top: 10px;
+    position: relative;
+}
+
+.serviceside {
+    background: #f1f5f6;
+    margin: 0 0 30px;
+}
+
+.service-search, .serviceside {
+    display: block;
+    width: 100%;
+    border: 1px solid silver;
+}
+
+.doctorsli .row, .logo-bottom, .service2ndl, .serviceside, .top-service {
+    position: relative;
+}
+
+    .serviceside .title {
+        background: #007780;
+        color: #fff;
+        font-size: 23px;
+    }
+
+        .serviceside .title h5 {
+            color: #fff;
+            font-size: 23px;
+            line-height: 26px;
+            padding: 15px 14px;
+            margin: 0;
+        }
+
+.service-title h2 {
+    border: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.title {
+    width: 100%;
+    border-bottom: 0 solid #d9d9d9;
+}
+
+.contacthead h2, .contacthead h3, .enqulist h2, .enqulist h3, .title {
+    margin-bottom: 10px;
+}
+
+.ms-h2, .ms-h3, .ms-headerFont, h1, h2, h3, h4, h5, h6 {
+    /* font-family: Conv_OptimaLTStdMedium!important;*/
+}
+
+.serviceside ul {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 22px;
+}
+
+    .serviceside ul li {
+        list-style-image: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/servicebullet.png);
+    }
+
+        .serviceside ul li a {
+            color: #333333;
+            font-size: 14px;
+            line-height: 23px;
+            cursor: pointer;
+        }
+
+.inner-content {
+    margin: 0 auto;
+}
+
+.last-update {
+    color: #333333;
+    font-size: 10px;
+    display: block;
+}
+
+.backser {
+    float: right;
+    position: absolute;
+    right: 14px;
+    top: 17px;
+}
+
+    .backser a, .backser i {
+        color: #007780;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 0 4px;
+    }
+
+.service4thl {
+    display: block;
+    width: 100%;
+}
+
+.acessserbut {
+    display: block;
+    height: auto;
+    margin: 10px 0;
+    width: 100%;
+}
+
+    .acessserbut, .acessserbut a, .bulletarrli, .mapdata, .our-locside h2 {
+        position: relative;
+    }
+
+        .acessserbut a {
+            background: #007780;
+            padding: 13px 15px;
+            border: none;
+            box-shadow: none;
+            display: block;
+            font-size: 18px;
+            float: right;
+            right: 0;
+            text-decoration: none;
+        }
+
+.btn-primary:focus, .btn-primary:hover, .btn-primary:visited, input[type=button]:focus, input[type=button]:hover, input[type=button]:visited {
+    background: #92c544;
+    color: #fff;
+    border: 0;
+    border-radius: 0;
+}
+
+.table-responsive.service-table {
+    display: inline-block;
+    margin: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.service-table caption, .service-table table, .service-table table td, .service-table table th {
+    border: 1px solid #d9d9d9;
+}
+
+.service-table caption {
+    background: #ebebeb;
+    padding: 7px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+}
+
+.service-table table .first-column {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    width: 36%;
+}
+
+.service-table table th {
+    background: #f6f6f6;
+}
+
+.service-table table td p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.service-search {
+    background: #f1f5f6;
+    padding: 10px;
+}
+
+    .service-search input[type=text] {
+        background: #fff;
+        border: 1px solid silver;
+        color: #333333;
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 90px 15px 15px;
+        width: 100%;
+        vertical-align: top;
+        margin-bottom: 10px;
+    }
+
+    .service-search button, .service-search input[type=submit] {
+        background: #007780;
+        color: #fff;
+        display: inline-block;
+        border: none;
+        box-shadow: none;
+        font-size: 16px;
+        padding: 10px 33px;
+        font-weight: 300;
+        margin-left: 0px;
+    }
+
+.top-service {
+    display: inline-block;
+    margin: 10px auto;
+    border-bottom: 1px solid silver;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+    .top-service h2 {
+        font-size: 25px;
+        color: #007780;
+        border: none;
+        line-height: 26px;
+        font-weight: 500;
+    }
+
+    .top-service p {
+        font-size: 18px;
+        color: #333333;
+        /*font-family: arial,sans-serif;*/
+        margin: 8px 0;
+    }
+
+.inner-content ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1%;
+}
+
+.top-serviceli {
+    display: block;
+}
+
+    .top-serviceli li {
+        float: left;
+        width: 48%;
+        list-style: none !important;
+        line-height: 32px;
+        margin: 10px 0;
+    }
+
+        .top-serviceli li img {
+            display: inline-block;
+            height: 28px;
+            margin: 0 5px;
+            width: 30px;
+            vertical-align: middle;
+        }
+
+        .top-serviceli li a {
+            color: #333333;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .top-serviceli i, .top-serviceli li a {
+            display: inline-block;
+        }
+
+.top-service:last-child {
+    border: none;
+}
+
+/* find doctors css start here */
+
+.form-group.col-md-6.col-lg-6.col-xs-6.col-sm-12 {
+    width: 25%;
+}
+
+.form-doctor .form-group {
+    margin-bottom: 6px;
+}
+
+.doctors-list .form-main {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 20px;
+}
+
+.doctors-list .form-doctor input[type=text] {
+    background: #f1f5f6;
+    border-radius: 0;
+    border: 1px solid #d9d9d9;
+    color: #a3a3a3;
+    height: 56px;
+    font-size: 16px;
+}
+
+.form-group span {
+    font-size: 17px;
+}
+
+.searchtit {
+    color: #007780;
+    font-size: 18px;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.form-group table, .paging-container table {
+    border: none;
+}
+
+.form-group.radio {
+    margin: 0;
+    height: 90px;
+}
+
+    .form-group.radio table td {
+        padding: 15px;
+    }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+    /*margin-left: -7px;*/
+}
+
+.form-doctor .btn-primary {
+    border-radius: 0;
+}
+
+.find-doctor-form .btn-primary, .form-doctor .btn-primary {
+    background: #92c544;
+    border: none;
+    font-size: 14px;
+}
+
+.form-doctor .row:last-child {
+    padding: 0;
+    margin: 0;
+}
+
+.inner-content h4, .main-inner h4 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 26px;
+    padding: 3px 0;
+    color: #007780;
+}
+
+/*h1, h3, h4, h5, h6 {
+    color: #007780;
+}*/
+.buttons {
+    background: #f6f6f6;
+    border: 1px solid #cdcdcd;
+    width: auto;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+
+    .buttons ul {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: 0 0;
+    }
+
+    .buttons .active {
+        background: rgba(255,255,255,1);
+        background: -moz-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 53%,rgba(224,224,224,1) 96%,rgba(222,222,222,1) 100%);
+        background: -webkit-gradient(left top,left bottom,color-stop(0,rgba(255,255,255,1)),color-stop(53%,rgba(246,246,246,1)),color-stop(96%,rgba(224,224,224,1)),color-stop(100%,rgba(222,222,222,1)));
+        background: -webkit-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 53%,rgba(224,224,224,1) 96%,rgba(222,222,222,1) 100%);
+        background: -o-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 53%,rgba(224,224,224,1) 96%,rgba(222,222,222,1) 100%);
+        background: -ms-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 53%,rgba(224,224,224,1) 96%,rgba(222,222,222,1) 100%);
+        background: linear-gradient(to bottom,rgba(255,255,255,1) 0,rgba(246,246,246,1) 53%,rgba(224,224,224,1) 96%,rgba(222,222,222,1) 100%);
+        /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dedede', GradientType=0);*/
+        background-color: transparent;
+        font-weight: 700;
+        position: relative;
+        color: #007780;
+    }
+
+    .buttons li {
+        background-color: transparent;
+        color: #a5a5a5;
+        font-size: 18px;
+        float: left;
+        padding: 10px;
+        list-style: none;
+    }
+
+        .buttons li, .buttons li:active, .buttons li:focus {
+            border: none;
+        }
+
+    .buttons a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .buttons .active span {
+        color: #007780;
+    }
+
+    .buttons li span {
+        color: #333333;
+        font-size: 16px;
+        margin: 0 7px;
+    }
+
+    .buttons .active:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(219,219,219,0);
+        border-top-color: #dbdbdb;
+        border-width: 10px;
+        margin-left: -18px;
+    }
+
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .form-doctor select {
+        padding-right: 35px;
+    }
+}
+
+/* news css code starts here */
+.info-con {
+    border-bottom: 1px solid #dfdfdf;
+    display: inline-block;
+    height: auto;
+    margin: 10px 0;
+    padding-bottom: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.news, .privacy p, .rs-desc p {
+    line-height: 21px;
+}
+
+    .news h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 14px 0 0;
+        padding: 0;
+        border: none;
+        color: #007780;
+        font-weight: 600;
+        /*font-family: Conv_OptimaLTStdMedium!important;*/
+    }
+
+    .news h3, .rs-desc p, .tooltip, .viewallsmartapp {
+        font-weight: 600;
+    }
+
+.info-con h3 {
+    color: #007780;
+    font-weight: 600;
+}
+
+.main-inner h3 {
+    margin-bottom: 8px;
+    padding: 8px 0;
+    color: #007780;
+    line-height: 20px;
+}
+
+.info-news {
+    display: block;
+    border-radius: 0;
+}
+
+.main-inner p {
+    color: #333333;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: inherit;
+    padding-top: 0;
+}
+
+.main-inner .read, .main-inner .readmore {
+    /*float: left;*/
+    padding: 0 30px 0 0;
+    background-image: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/morearrow.png);
+    background-position: right;
+    font-weight: 600;
+    color: #007780;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+.ae .main-inner .read, .ae .main-inner .readmore, .main-inner .read, .main-inner .readmore {
+    font-weight: 600;
+    color: #007780;
+    margin: 10px 5px;
+    font-size: 16px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.news i.glyphicon.glyphicon-hand-right {
+    color: #84be00;
+    display: none;
+}
+
+.paging-container td {
+    font-size: 16px;
+    color: #333;
+}
+
+/* contact us page css code starts here*/
+
+.contact-det {
+    margin: 0 0 10px;
+}
+
+    .contact-det, .contact-det li p, .contact-det li span, .feed-form, .primary-health li {
+        display: inline-block;
+    }
+
+        .ae .buttons li, .ae .doctorslist li, .contact-det li, .tree, .tree li, .tree ul {
+            list-style: none;
+        }
+
+.main-inner li, .main-inner ol li {
+    line-height: 24px;
+    font-size: 14px;
+    list-style-position: outside;
+}
+
+.contact-det li span {
+    font-size: 16px;
+    font-weight: 700;
+    width: 100px;
+    line-height: 33px;
+    vertical-align: top;
+}
+
+.contact-det li p {
+    padding: 0;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+    .contact-det li p a {
+        color: #333333;
+    }
+
+.contact-address {
+    border-top: 1px solid #d9d9d9;
+}
+
+.contact-address, .specialitycen {
+    margin: 20px 0;
+    padding: 17px 0;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+    .contact-address h2 {
+        border: 0;
+        font-size: 27px;
+        font-weight: 300;
+    }
+
+.hospilist {
+    display: inline-block;
+    margin: 10px 0 31px;
+}
+
+.contact-address h3 {
+    font-size: 20px;
+    color: #000;
+}
+
+.campaign-carousel .carousel-caption p, .contact-address h3, .hospilist a, .tree li a {
+    text-decoration: none;
+}
+
+.address-li a, .address-li li {
+    color: #333;
+    font-size: 14px;
+    display: block;
+    list-style: none;
+    line-height: 24px;
+}
+
+ul.address-li {
+    margin: 0;
+    padding: 0;
+}
+
+.hospilist a {
+    color: #007780;
+    font-size: 17px;
+    margin: 7px 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contacthead {
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+}
+
+.enqulist {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+.enlist {
+    background: #f1f5f6;
+    border: 1px solid #d9d9d9;
+    height: 100px;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+    .enlist h5 {
+        color: #333333;
+        font-size: 16px;
+        /*font-family: Conv_OptimaLTStdMedium!important;*/
+    }
+
+    .enlist a {
+        color: #007780;
+        display: block;
+        font-size: 18px;
+        padding-top: 14px;
+    }
+
+    .enlist a, .foot-link li a, .primaryhealthcare li a, .specialitycen li a {
+        text-decoration: underline;
+    }
+
+.specialitycen {
+    border-top: 1px solid #d9d9d9;
+}
+
+    .specialitycen h2 {
+        border: 0;
+        font-size: 20px;
+        line-height: 18px;
+        color: #007780;
+        margin-bottom: 10px;
+    }
+
+    .specialitycen li {
+        list-style: none;
+    }
+
+    .specialitycen i {
+        color: #92c544;
+        font-size: 16px;
+    }
+
+    .specialitycen li a {
+        color: #333333;
+        line-height: 36px;
+        font-size: 16px;
+    }
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+a.iframe.location.cboxElement.fancybox.fancybox.iframe {
+    color: #007780;
+}
+
+.primary-health li {
+    margin: 0 7px;
+}
+
+/* health funding css code starts here */
+.medicaledu {
+    margin-bottom: 30px;
+    padding-bottom: 38px;
+    display: inline-block;
+    width: 100%;
+}
+
+    .medicaledu .icon-tabs {
+        border-bottom: medium none;
+        display: block;
+        position: relative;
+        margin-top: 30px;
+    }
+
+        .medicaledu .icon-tabs li {
+            float: left;
+            height: 138px;
+            overflow: hidden;
+            padding: 0 4px;
+            width: 20%;
+        }
+
+        .medicaledu .icon-tabs li, .scenlists li {
+            border: 1px solid #d9d9d9;
+            list-style: none;
+        }
+
+            .medicaledu .icon-tabs li a {
+                color: #333333;
+                display: block;
+                height: 132px;
+                text-align: center;
+                text-decoration: none;
+                width: 100%;
+                /*font-family: arial,sans-serif;*/
+                font-size: 14px;
+            }
+
+.ser-icon {
+    display: block;
+    margin-top: 18px;
+    width: 100%;
+}
+
+    .ser-icon img {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: 0 0;
+    }
+
+.healthcon, .healthtit .bulp, .hospi, .ser-icon {
+    background-repeat: no-repeat;
+}
+
+
+#sidenav > ul > li.active > a {
+    color: #fff;
+}
+
+.editpage ul {
+    padding: 0;
+    float: right;
+}
+
+.editpage li {
+    list-style: none;
+    display: inline-block;
+}
+
+input#btnCreatePage, input#btnEditPage {
+    border-radius: 0;
+    background: #92c544;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+    input#btnCreatePage:hover, input#btnEditPage:hover {
+        background: #007780;
+        border: none;
+        border-radius: 0;
+    }
+
+.hfu {
+    background-image: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/Health-Funding.png);
+    background-repeat: no-repeat;
+    background-size: 44px;
+    display: inline-block;
+    height: 41px;
+    width: 54px;
+}
+
+.our-locside {
+    margin: 40px 0;
+}
+
+    .our-locside h2 {
+        color: #007780;
+        border-bottom: 1px solid #d9d9d9;
+        margin: 7px 0;
+        font-size: 24px;
+    }
+
+a, a:focus, a:hover, ins {
+    text-decoration: none;
+}
+
+/* breadcrumb css code starts from here */
+.breadcrumb .home:before {
+    font-family: 'FontAwesome';
+    content: '\f015';
+    color: #007780;
+    font-size: 24px;
+    padding: 0;
+    margin: 2px 0;
+    top: -6px;
+    position: relative;
+}
+
+.breadcrumb a:before {
+    font-family: 'FontAwesome';
+    content: '\f105';
+    color: #97ca49;
+    font-size: 16px;
+    padding: 0 6px;
+}
+
+
+/*Doctor details css starts here*/
+.profile-img img {
+    max-width: 180px;
+}
+
+.profile-desc li {
+    color: #333333;
+    font-size: 16px;
+    list-style: none;
+}
+
+    .profile-desc li a {
+        color: #007780;
+        font-size: 16px;
+    }
+
+.profile-desc a[href^="mailto:"] {
+    text-decoration: underline;
+}
+
+.doc-loc {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-loc.png) left no-repeat;
+}
+
+.doc-phone {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-phone.png) left no-repeat;
+}
+
+.doc-mail {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-mail.png) left no-repeat;
+}
+
+.doc-loc, .doc-mail, .doc-phone, .incat, .infac, .ingen, .inloc, .innat, .inspec {
+    display: inline-block;
+    height: 20px;
+    width: 36px;
+}
+
+#doctorsmap, #doctorsmap #map, .doc-loc, .doc-mail, .doc-phone, .incat, .infac, .ingen, .inloc, .innat, .inspec, .pagination, .visdocli {
+    position: relative;
+}
+
+.panel-group {
+    padding: 20px;
+}
+
+.doctor-panel .panel {
+    border: none;
+    box-shadow: none;
+}
+
+.panel {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 44%,rgba(246,246,246,1) 100%);
+    background: -webkit-gradient(left top,left bottom,color-stop(0,rgba(255,255,255,1)),color-stop(44%,rgba(246,246,246,1)),color-stop(100%,rgba(246,246,246,1)));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 44%,rgba(246,246,246,1) 100%);
+    background: -o-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 44%,rgba(246,246,246,1) 100%);
+    background: -ms-linear-gradient(top,rgba(255,255,255,1) 0,rgba(246,246,246,1) 44%,rgba(246,246,246,1) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,1) 0,rgba(246,246,246,1) 44%,rgba(246,246,246,1) 100%);
+    border: 1px solid #cdcdcd;
+    margin: 10px 0;
+}
+
+.bl-box, .panel {
+    /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6', GradientType=0);*/
+}
+
+.doctor-panel .panel-heading {
+    background-color: #e3e3e3;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    color: #737373;
+    padding: 10px 15px;
+    /*font-family: arial,sans-serif;*/
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.doctor-panel .panel-title a {
+    font-weight: 700;
+}
+
+.panel-title > a, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > .small > a {
+    color: inherit;
+}
+
+.indicator {
+    margin-right: 5px;
+}
+
+.doctor-panel table, .doctor-panel table td {
+    border: 1px solid #cbcbce;
+}
+
+.doctor-panel .panel-body .tit {
+    background: #007780;
+    color: #fff;
+}
+
+.pharmacy a, td span {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.doctor-panel table td {
+    color: #333333;
+    font-weight: 600;
+}
+
+.inloc {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/abo-doc-loc.png) left no-repeat;
+}
+
+.inspec {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-spec.png) left no-repeat;
+}
+
+.incat {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-cat.png) left no-repeat;
+}
+
+.ingen {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-gender.png) left no-repeat;
+}
+
+.innat {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-nat.png) left no-repeat;
+}
+
+.infac {
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/doc-fac.png) left no-repeat;
+}
+
+.doctors-list .form-doctor select {
+    background: #f1f5f6;
+    border-radius: 0;
+    border: 1px solid #d9d9d9;
+    color: #a3a3a3;
+    height: 56px;
+    font-size: 16px;
+    outline: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.doctordet .viewmore {
+    position: relative;
+    float: none;
+    color: #007780;
+    font-weight: 600;
+    padding-right: 30px;
+    margin: 7px 0;
+    display: inline-block;
+    text-decoration: none;
+    line-height: 30px;
+    background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/morearrow.png) right no-repeat;
+}
+
+.doctorssingle {
+    padding: 30px;
+}
+
+.doctorimg img {
+    width: 183px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    border: 3px solid #d9d9d9;
+}
+
+.doctordet h4 {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 3px 0;
+}
+
+.doctordet li {
+    font-size: 16px;
+    color: #333333;
+}
+
+.apps .platform li, .buttons li, .circle-menu, .doctordet li, .eveloc, .eveloc li, .footerlink li, .footlog li, .gllery-images li, .icon-tabs li, .info-doc li, .list-doc li, .logo-bottom li, .pagination li, .primaryhealthcare li, .profile-desc li, .specialitycen li, .visdocli .visdet li {
+    list-style: none;
+}
+
+.doctordet ul {
+    margin: 0;
+    padding: 0;
+}
+
+.doctorsli .row {
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 15px;
+    margin: 10px 0;
+    display: block;
+}
+
+.doctorsli .row, .logo-bottom, .service2ndl, .serviceside, .top-service {
+    position: relative;
+}
+
+.pagination-bootpag {
+    display: inline-block;
+}
+
+.pagination {
+    background: 0 0;
+    border: 0;
+    border-radius: 0;
+    width: auto;
+    margin: 10px 0;
+}
+
+    .pagination li.disabled, .pagination li.disabled .next {
+        display: none;
+        height: 0;
+    }
+
+    .pagination li:first-child, .pagination li:first-child a, .pagination li:last-child, .pagination li:last-child a {
+        background: #007780;
+        color: #fff;
+        border: none;
+    }
+
+    .pagination .next, .pagination .prev {
+        color: #fff;
+    }
+
+    .pagination li {
+        background: #fff;
+        border: 1px solid #cacaca;
+        padding: 5px;
+        font-size: 16px;
+        color: #333333;
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+        .pagination li:first-child, .pagination li:first-child a, .pagination li:last-child, .pagination li:last-child a {
+            background: #007780;
+            color: #fff;
+            border: none;
+        }
+
+    .pagination > li:first-child > a,
+    .pagination > li:first-child > span,
+    .pagination > li:last-child > a,
+    .pagination > li:last-child > span {
+        color: #fff;
+        border-radius: 0;
+        background: #007780;
+    }
+
+    .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+        background: #8fc63b;
+        border: 0;
+    }
+/* All Excel css modifications code starts here */
+.news li {
+    /* list-style: none;*/
+}
+
+.ms-rtestate-field li {
+    /*list-style: none;*/
+}
+
+blockquote {
+    margin: 0 0 20px;
+    font-size: 14px;
+    padding: 0;
+    border: none;
+}
+
+.services-list .row {
+    margin-bottom: 20px;
+}
+
+.services-list {
+    padding: 20px;
+}
+
+.panel-body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.panel-body li {
+    list-style: none;
+}
+
+i.indicator.glyphicon.pull-right.glyphicon-plus-sign {
+    margin-top: 8px;
+}
+
+.ms-rtestate-field p {
+    margin-top: 10px;
+}
+
+/* Banner image css code starts here */
+.banner-slider ul li img {
+    height: 480px;
+}
+
+#contact-map {
+    width: 100%;
+    height: 315px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #c6c6c6
+}
+
+.contact-address,
+.specialitycen {
+    margin: 20px 0;
+    padding: 17px 0;
+    width: 100%;
+    display: inline-block;
+    position: relative
+}
+
+.contact-address {
+    border-top: 1px solid #d9d9d9
+}
+
+    .contact-address h2 {
+        border: 0;
+        font-size: 27px;
+        font-weight: 300
+    }
+
+    .contact-address h3 {
+        font-size: 20px;
+        color: #000
+    }
+
+#sidemap {
+    min-height: 100px;
+    min-width: 100px;
+}
+
+@media only screen and (max-width:480px) {
+    .banner-slider ul li img {
+        display: none;
+    }
+
+    .banner-slider ul li .container .caption {
+        /*position: relative;*/
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        max-width: 440px;
+        z-index: 1;
+    }
+
+        .banner-slider ul li .container .caption h1 {
+            font-size: 30px;
+        }
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8cc63f;
+    border-color: #8cc63f;
+    border-radius: 0px;
+}
+
+    .btn-primary:focus, .btn-primary:hover, .btn-primary:visited, input[type=button]:focus, input[type=button]:hover, input[type=button]:visited {
+        /* background: #008b99;
+    color: #fff;   
+    border-radius: 0;
+    border: 1px solid #008b99;*/
+    }
+
+.searchres {
+    margin: 7px 0;
+}
+
+.primary-health .address-li li, .searchres {
+    display: block;
+}
+
+.customserres {
+    color: #007780;
+    font-size: 18px;
+    /*font-family: arial;*/
+    line-height: 25px;
+}
+
+.searchlistcon {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 10px 0;
+}
+
+.main-inner p {
+}
+
+.attachres {
+    margin: 7px 0;
+}
+
+.searchlistcon h3 {
+    color: #007780;
+    font-size: 24px;
+    line-height: 18px;
+    margin-bottom: 5px;
+}
+
+.searchlistcon td {
+    display: block;
+    width: 100%;
+    border: 0 !important;
+}
+
+.searchlistcon a, .searchlistcon a:focus, .searchlistcon a:hover {
+    color: #007780;
+}
+
+.attachres li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.attachres ul {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .cssddl {
+        width: 100%;
+        height: 56px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .cssddl {
+        width: 100%;
+        height: 56px;
+    }
+
+    .form-group.col-md-6.col-lg-6.col-xs-6.col-sm-12 {
+        width: 100%;
+    }
+
+    .top-serviceli li {
+        width: 100%;
+    }
+}
+
+
+
+.ae .main-inner .read, .ae .main-inner .readmore {
+    float: right;
+    padding: 0 0 0 40px;
+    background-image: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/arrowar.png);
+    background-position: left;
+}
+
+.ae .main-inner .read, .ae .main-inner .readmore, .main-inner .read, .main-inner .readmore {
+    font-weight: 600;
+    color: #007780;
+    margin: 10px 5px;
+    font-size: 16px;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.faq-inner button a {
+    color: #fff;
+}
+
+.faq-accordion {
+    display: block;
+    margin: 12px 0;
+}
+
+    .faq-accordion .panel-default {
+        background: #f1f5f6;
+        border-radius: 0;
+        border: 1px solid #e3e3e3;
+    }
+
+        .faq-accordion .panel-default > .panel-heading {
+            background: #e3e3e3;
+            border-radius: 0;
+            border: 0;
+            margin-bottom: -8px;
+        }
+
+            .faq-accordion .panel-default > .panel-heading a {
+                color: #737373;
+                font-size: 16px;
+                line-height: 51px;
+                padding: 0 20px;
+            }
+
+        .faq-accordion .panel-default > .panel-collapse {
+            padding: 20px 10px;
+        }
+
+            .faq-accordion .panel-default > .panel-collapse p {
+                color: #333333;
+                font-size: 16px;
+                line-height: 30px;
+            }
+
+        .faq-accordion .panel-default .panel-heading a:before {
+            content: "\f068";
+            color: #737373;
+            float: right;
+            font-family: fontAwesome;
+            font-size: 14px;
+            position: relative;
+            right: 19px;
+            top: 2px;
+        }
+
+        .faq-accordion .panel-default .panel-heading a.collapsed:before {
+            content: "\f067";
+        }
+
+.ae .faq-accordion .panel-default .panel-heading a:before {
+    color: #737373;
+    float: left;
+    font-family: fontAwesome;
+    font-size: 14px;
+    position: relative;
+    left: 19px;
+    right: auto;
+    top: 2px;
+}
+
+#doctorsmap, #doctorsmap #map, #facilitymap {
+    min-height: 400px;
+}
+
+.doctorlist {
+    background: rgba(255, 255, 255, .8);
+    float: right;
+    height: 80%;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 35%;
+    z-index: 7;
+}
+
+    .doctorlist li {
+        border-bottom: 1px solid #d9d7d8;
+        padding: 8px;
+        display: block;
+        width: 100%;
+    }
+
+    .doctorlist ul {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: 0 0;
+    }
+
+    .doctorlist .viewmore {
+        position: relative;
+        float: none;
+        color: #007780;
+        font-weight: 600;
+        padding-right: 30px;
+        margin: 7px 0;
+        display: block;
+        text-decoration: none;
+        line-height: 30px;
+        cursor: pointer;
+        overflow: hidden;
+        background: url(https://services.dha.gov.ae/eservices/CovidCertificate/Certificate/img/morearrow.png) right no-repeat;
+        max-width: 132px;
+    }
+
+.header .navigation .main-menu > li .sub-menu .container {
+    max-height: 400px;
+    overflow-y: hidden;
+}
+
+.main-inner {
+    display: block;
+    margin: 0;
+    padding: 10px 0;
+    clear: both;
+}
+
+
+.sidebar .service-search input[type=submit] {
+    background: #007780;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px 26% 0;
+    width: 40%;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 7px 17px;
+}
+
+.sidebar .service-search input[type=text] {
+    width: 100%;
+    float: left;
+}
+
+.sidebar .service-search {
+    background: #f1f5f6;
+    border: 1px solid silver;
+    display: inline-block;
+    margin: 0 0 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+    body {
+        overflow: hidden;
+    }
+}
+/*Slider New Css*/
+/*
+.bx-wrapper {
+		    -moz-box-shadow: none;
+		    -webkit-box-shadow:none;
+		    box-shadow: none;
+		    border: none ! important;
+		    background: #fff;
+		    margin-bottom: 0px;
+		}
+		.bx-wrapper img{
+			height:480px;
+			width:100%;
+		}
+		.bx-pagination{
+			display: block;
+		    background-color: #008b99;
+		    padding: 20px 0px;
+		    clear: both;
+		    width: 100%;		   
+		}		
+		.bx-actions span{
+			margin: 0px 25px;
+		    outline: none;
+		    border: 0px;
+		    cursor: pointer;
+		    position: relative;
+		    display: inline-block;
+		    color: white;		    
+		    text-align: center;		   
+		    vertical-align: top;
+		    opacity: .4;
+		    font-size:16px;
+		}
+		.bx-actions > a.active > span{
+			opacity: 1;
+			
+		}
+		.bx-pagination .bx-actions > a.active > span:before {
+		    width: 20px;
+		    height: 10px;
+		    content: "";
+		    top: -40px;
+		    position: absolute;
+		    margin-left: -10px;
+		    z-index: 1;
+		    left: 50%;
+		    display: block;
+		    background-image: url(../img/polygon.png);
+		}
+		.bx-pagination .container {
+		    position: relative;
+		}
+		.bx-pagination .bx-controls {
+		    margin: 0px 0px;
+		    margin: Infinity 0px;
+		    position: absolute;
+		    top: 0px;
+		    font-size: 28px;
+		    color: #fff;
+		}
+		.bx-pagination .bx-controls.prev {
+		    left: 0px;
+		    -ms-transform: rotate(-180deg);
+		    -webkit-transform: rotate(-180deg);
+		    transform: rotate(-180deg);
+		}
+		.bx-pagination .bx-controls.next {
+		    right: 0px;
+		}
+		
+		#slider-prev .bx-prev:after {
+		    font-family: Linearicons-Free;
+		    speak: none;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-variant: normal;
+		    text-transform: none;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;	
+		    content: "\e886";
+		    left: 0px;
+		    -ms-transform: rotate(-180deg);
+		    -webkit-transform: rotate(-180deg);
+		    transform: rotate(-180deg);		   
+			color:white;
+		}
+		#slider-next .bx-next:after{
+			font-family: Linearicons-Free;
+		    speak: none;
+		    font-style: normal;
+		    font-weight: 400;
+		    font-variant: normal;
+		    text-transform: none;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;	
+			content: "\e886";
+			right: 0px;			
+			color:white;
+		}
+		.bx-pagination .bx-prev.disabled, .bx-pagination .bx-next.disabled {
+		  display: none;
+		}
+		a.bx-next{
+			text-decoration: none;
+		}
+		a.bx-prev{
+			text-decoration: none;
+		}
+		.bxslider .caption{
+			position: absolute;
+		    top: 45%;
+		    transform: translateY(-50%);
+		    -webkit-transform: translateY(-50%);
+		    -moz-transform: translateY(-50%);
+		    max-width: 440px;
+		    z-index: 1;
+		    
+		}
+		.bxslider .caption h1 {
+		    color: #008b99;
+		    margin-bottom: 20px;		   
+		    line-height: 60px;
+		    font-size: 42px;		    
+		}*/
+#YearOfZayed {
+    display: none !important;
+}
+.dha-app-icon {
+    margin-right: 15px !important;
+    max-width: 45px !important;
+}

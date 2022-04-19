@@ -1,0 +1,29 @@
+﻿#loader .modal-content {
+    text-align: center;
+    padding-bottom: 15px;
+}
+#loader .modal-content .row img{
+margin-top: 15px;
+}
+#loader .modal-content span {
+margin-top: 15px;
+    margin-bottom: 15px;
+}
+.modal {
+    top: 30% !important;
+}
+@media (max-width: 992px) {
+    .infolink {
+        text-align: left;
+    }
+    .modal {
+        top: 0% !important;
+    }
+}
+a#MRN {
+    cursor: pointer;
+}
+.dobar {
+    unicode-bidi: embed;
+    direction: ltr;
+}
